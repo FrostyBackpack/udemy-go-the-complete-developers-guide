@@ -184,14 +184,18 @@ Slice: An array that can grow or shrink
 - Both Array and Slices must be defined with a datatype.
 
 - Every element in a slice must be of same type.
-  E.g. "Five of Spades", "Three of Diamonds", "Five of Diamonds" (Correct)
-  "Five of Spades", 55525235, "Five of Diamonds" (Incorrect)
+
+  - E.g. "Five of Spades", "Three of Diamonds", "Five of Diamonds" (Correct)
+    <br/>
+    "Five of Spades", 55525235, "Five of Diamonds" (Incorrect)
 
 - To initialize Slice
-  cards := []string{"Ace of Diamonds", newCard()}
+
+  - cards := []string{"Ace of Diamonds", newCard()}
 
 - To add new element to Slice
-  cards = append(cards, "Six of Spades")
+
+  - cards = append(cards, "Six of Spades")
 
 - Slices are zero-indexed.
 
@@ -199,7 +203,12 @@ Slice: An array that can grow or shrink
 
   - package ioutil implements some I/O utility functions
     - func WriteFile (filename string, data []byte, perm os.FileMode) error
+      <br/>
       WriteFile writes data to a file named by filename. If the file does not exist, WriteFile creates it with permissions perm; otherwise WriteFile truncates it before writing.
+  - We have deck ---> []string ---> string ---> We want []byte
+    - func Join(a []string, sep string) string
+      <br/>
+      Join concatenates the elements of a to create a single string. The separator string sep is placed between elements in teh resulting string.
 
 - For Loop
   <pre>
